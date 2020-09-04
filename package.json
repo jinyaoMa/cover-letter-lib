@@ -1,6 +1,6 @@
 {
   "name": "cover-letter-lib",
-  "version": "1.0.0-20200903.2314",
+  "version": "1.0.0-20200904.1506",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",

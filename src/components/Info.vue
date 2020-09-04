@@ -24,7 +24,6 @@ export default {
 .Info
   padding-bottom 5rem
   padding-right 5rem
-  max-height calc(50vmin - 5rem)
   position absolute
   bottom 0
   right 0
