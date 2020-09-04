@@ -1,15 +1,17 @@
 module.exports = {
+  publicPath:
+    process.env.NODE_ENV === "production" ? "/cover-letter-lib/" : "/",
 
-  publicPath: process.env.NODE_ENV === 'production' ? '/cover-letter-lib/' : '/',
+  outputDir: "docs",
 
   productionSourceMap: false,
 
   chainWebpack: config => {
     config.module
-      .rule('md')
+      .rule("md")
       .test(/\.md$/i)
-      .use('raw-loader')
-      .loader('raw-loader')
-      .end()
+      .use("raw-loader")
+      .loader("raw-loader")
+      .end();
   }
-}
+};
