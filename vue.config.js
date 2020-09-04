@@ -13,5 +13,9 @@ module.exports = {
       .use("raw-loader")
       .loader("raw-loader")
       .end();
+    config.plugin("html").tap(args => {
+      args[0].title = "Cover Letter Library";
+      return args;
+    });
   }
 };

@@ -4,11 +4,15 @@
       <Cover />
       <Brand ref="brand" />
       <Info />
-      <div v-if="!!content" class="scroll" @click="handleScroll">
+      <div
+        v-if="!!content && content !== 'false'"
+        class="scroll"
+        @click="handleScroll"
+      >
         <i class="fas fa-chevron-down"></i>
       </div>
     </div>
-    <div v-if="!!content" class="main">
+    <div v-if="!!content && content !== 'false'" class="main">
       <mavon-editor
         class="me"
         ref="me"
