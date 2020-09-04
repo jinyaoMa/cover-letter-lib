@@ -12,7 +12,7 @@ export default new Vuex.Store({
       ) {
         return "zh-CN";
       }
-      return "en-US";
+      return "en";
     })()
   },
   getters: {
@@ -23,18 +23,18 @@ export default new Vuex.Store({
   mutations: {
     toggleLocale(state) {
       switch (state.locale) {
-        case "en-US":
+        case "en":
           state.locale = "zh-CN";
           break;
         case "zh-CN":
-          state.locale = "en-US";
+          state.locale = "en";
           break;
       }
     }
   },
   actions: {
-    toggleLocale(state) {
-      state.commit("toggleLocale");
+    toggleLocale(context) {
+      context.commit("toggleLocale");
     }
   },
   modules: {}

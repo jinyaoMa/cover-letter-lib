@@ -24,5 +24,7 @@ export default {
   @media (max-width 1024px)
     left 0
     transform rotate(0deg)
-    height calc(50vmin - 5rem)
+    height calc(100vh - 20rem)
+  @media (max-width 640px)
+    display none
 </style>
